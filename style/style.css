@@ -1,0 +1,130 @@
+:root {
+    --color-purple: #833AB4;
+    --color-blue: #4c68d7;
+    --color-orange: #FF553E;
+    --color-yellow: #F9DC64;
+    --color-white: #fff;
+    --color-gray: #dbdbdb;
+    --color-gray-dark: #8e8e8e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, var(--color-purple), var(--color-blue), var(--color-orange), var(--color-yellow));
+}
+
+.login-container {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 320px;
+}
+
+.logo {
+    width: 180px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-gray);
+}
+
+.login-form_esqueci_senha {
+    display: flex;
+    margin-bottom: 10px;
+    color: var(--color-blue);
+    text-decoration: none;
+    justify-content: end;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.logar {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.divider {
+    height: 1px;
+    display: flex;
+    margin: 8px 0;
+}
+
+.ou {
+    position: relative;
+    text-align: center;
+    color: var(--color-gray-dark);
+    font-size: 14px;
+}
+
+.ou::before, .ou::after {
+  content: "";
+  display: inline-block;
+  width: 115px; /* Ajuste a largura da linha */
+  height: 1px; /* Ajuste a espessura da linha */
+  background-color: var(--color-gray); /* Ajuste a cor da linha */
+  vertical-align: middle; /* Alinha a linha com o texto */
+  margin-left: 7.8px; /* Ajuste o espaçamento */
+}
+
+.cadastro {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--color-gray-dark);
+}
+
+.cadastro-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+.cadastro-link:hover {
+    text-decoration: underline;
+}
+
+.facebook-login img {
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    width: 30px;
+    height: 30px;
+}
+
+.facebook-login a{
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--color-blue);
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
